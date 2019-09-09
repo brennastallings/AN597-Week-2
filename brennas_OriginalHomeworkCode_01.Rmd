@@ -12,13 +12,16 @@ knitr::opts_chunk$set(echo = TRUE)
 ##Challenge 1
 
 
-###1
 ```{r Ulysses}
+##First, create a vector of 1 word character strings comprising the first line of the novel Ulysses, by James Joyce: “Stately, plump Buck Mulligan came from the stairhead, bearing a bowl of lather on which a mirror and a razor lay crossed.”
+
 Ulysses<- c("Stately, plump Buck Mulligan came from the stairhead, bearing a bowl of lather on which a mirror and a razor lay crossed.")
 
 str_split(Ulysses , boundary("word"))
 
 splitUlysses <- str_split(Ulysses , boundary("word"))
+
+##Then, extract every third element of this vector.
 
 vector_Ulysses <- unlist(splitUlysses)
 
@@ -27,3 +30,21 @@ third <- vector_Ulysses[seq(from=1, to=22, by=3 )]
 third
 ```
 
+##Challenge 2
+```{r Subsetting}
+m <- matrix(data=1:80,nrow=8,ncol=10,byrow=FALSE)
+
+##Given the matrix, m, above, extract the 2nd, 3rd, and 6th columns and assign them to the variable x
+ y<- c(2,3,6)
+ x <- m[ ,y]
+ x
+ 
+ ##Given the matrix, m, above, extract the 6th to 8th row and assign them to the variable x
+ x <- m[6:8, ]
+ x
+ 
+ ##Given the matrix, m, above, extract the elements from row 2, column 2 to row 6, column 9 and assign them to the variable x
+ x <-m[2:6, 2:9]
+ x
+ ##Is this what he wants, or do I need to add the partial columns in 1 & 6?
+```
