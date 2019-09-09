@@ -48,3 +48,19 @@ m <- matrix(data=1:80,nrow=8,ncol=10,byrow=FALSE)
  x
  ##Is this what he wants, or do I need to add the partial columns in 1 & 6?
 ```
+
+##Challenge 3
+```{r Arrays}
+##Construct a 4-dimensional, 400 element array (5 x 5 x 4 x 4) named a consisting of the numbers 400 to 1 (i.e., a descending series)
+a<- array(data=400:1, dim=c(5,5,4,4))
+a
+
+##Given this matrix, what would the following return?
+
+a[1, 1, 1, 2]
+
+a[2, 3, 2, ]
+
+a[1:5, 1:5, 3, 3]
+
+```
