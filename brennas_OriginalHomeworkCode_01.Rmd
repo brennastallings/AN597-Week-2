@@ -58,11 +58,18 @@ a
 ##Given this matrix, what would the following return?
 
 a[1, 1, 1, 2]
+#300
 
 a[2, 3, 2, ]
+#364 264 164  64
 
 a[1:5, 1:5, 3, 3]
 
+# 150  145  140  135  130
+# 149  144  139  134  129
+# 148  143  138  133  128
+# 147  142  137  132  127
+# 146  141  136  131  126
 ```
 
 ##Challenge 4
@@ -103,3 +110,18 @@ matrix[,3]<-as.factor(matrix[,3])
 ##When you are done, use the str() command to show the data type for each variable in your dataframe
 str(matrix)
 ```
+ ##Top 5 Challenges
+ ###1
+ I had trouble in challenge 4 with trying to find a way to show the data.
+ 
+ ###2
+ I had issues with the first challenge until I got the proper package actually loaded so it would work/run 
+ 
+ ###3
+ I needed to google a bit to find the way to unlist the Ulysses phrase into a vector
+ 
+ ###4
+ I also had a weird issue with the Rmarkdown file in general. I kept having issues closing the chunks. At one point I had to compleatly remove one and then remake it. Not sure why?
+ 
+ ###5
+ Im not sure on annotating code. I basically just used the challenges themself, but im not sure if it is enough information.
