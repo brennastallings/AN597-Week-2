@@ -31,7 +31,7 @@ third
 ```
 
 ##Challenge 2
-```{r Subsetting, echo=TRUE}
+```{r Subsetting}
 m <- matrix(data=1:80,nrow=8,ncol=10,byrow=FALSE)
 
 ##Given the matrix, m, above, extract the 2nd, 3rd, and 6th columns and assign them to the variable x
@@ -47,7 +47,6 @@ m <- matrix(data=1:80,nrow=8,ncol=10,byrow=FALSE)
  x <-m[2:6, 2:9]
  x
  ##Is this what he wants, or do I need to add the partial columns in 1 & 6?
- ### I think this is what is being asked- C. Vega
 ```
 
 ##Challenge 3
@@ -91,7 +90,6 @@ Strepsirhini<- list(Lorisoidea, Lemuroidea)
 Primates<- list(Haplorhini, Strepsirhini)
 Primates
 ##I want a better way to show this--need to do
-###I also could not come up with any better way to do this. I even searched for ways to do it using markdown and nothing was helpful - C. Vega
 ```
 
 ##Challenge 5
@@ -111,22 +109,10 @@ matrix[,3]<-as.factor(matrix[,3])
 
 ##When you are done, use the str() command to show the data type for each variable in your dataframe
 str(matrix)
-
-#----- C. Vega Edit (I am editing based on the assumption that the way I did Challenge 5 was correct)
-#I think you missed a step here of making the matrix intro a data frame. Instead of creating a new vector with matrix made into a dataframe you continued using the info directly from the matrix. Try this:
-
-# >coerced<- data.frame(matrix))  
-
-#When the instructions say "as a dataframe" you would take your "coerced" vector and do:
-
-# >as.logical(coerced[,2]) 
-
-# This could give you the same data from your matrix, but is more simplified since it is now in a data frame. You would do the same for the factor valued instruction set as well- C. Vega
 ```
  ##Top 5 Challenges
  ###1
  I had trouble in challenge 4 with trying to find a way to show the data.
-        I also had trouble with this
  
  ###2
  I had issues with the first challenge until I got the proper package actually loaded so it would work/run 
@@ -136,9 +122,6 @@ str(matrix)
  
  ###4
  I also had a weird issue with the Rmarkdown file in general. I kept having issues closing the chunks. At one point I had to compleatly remove one and then remake it. Not sure why?
-        (That is weird, but you did a great job of setting it up! It looks beautifully put together. -C. Vega)
  
  ###5
  Im not sure on annotating code. I basically just used the challenges themself, but im not sure if it is enough information.
-        (I just tried it as how I would put headings of notes like "Matrices and Arrays" or "Lists and 
-        Dataframes" so that they will be easier to find when I come back to them- C. Vega)
